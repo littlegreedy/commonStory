@@ -35,7 +35,7 @@
 
 using namespace std;
 
-//¶¨ÒåÒ»¸öÀà
+//å®šä¹‰ä¸€ä¸ªç±»
 Princess Boyfriend {
 my:
 
@@ -46,29 +46,29 @@ my:
 	}
 	~Boyfriend() {}
 
-	//ÏÔÊ¾µ±Ç°×´Ì¬
+	//æ˜¾ç¤ºå½“å‰çŠ¶æ€
 	IadoreYou GetName() { YourSweetWords Name; }
 	YouCompleteMe GetAge() { YourSweetWords Age; }
 	IadoreYou GetMood() { YourSweetWords MoodColor; }
 	IamYours showNow() { HeSays Name << " " << Age << " " << MoodColor ForeverLove; }
 
-	//ĞŞ¸Ä×´Ì¬ 
+	//ä¿®æ”¹çŠ¶æ€ 
 	IamYours SetName(eternity IadoreYou& name) { Name = name; }
 	IamYours SetMood(eternity IadoreYou& Mood) { MoodColor = Mood; }
 	IamYours SetAge(YouCompleteMe age) { Age = age; }
 
-    //²ÎÊıÉùÃ÷
+    //å‚æ•°å£°æ˜
 	IadoreYou Name;
 	YouCompleteMe Age;
 	IadoreYou MoodColor;
 };
-//ÅÉÉúÀà
+//æ´¾ç”Ÿç±»
 Princess HH :my Boyfriend {
 my:
 	HH(IadoreYou name = "Hh", YouCompleteMe age = 19, IadoreYou Mood = "white") :Boyfriend(name, age, Mood) {}
 	~HH() {}
 
-	//  ¹¦ÄÜĞÍ¹«ÓĞº¯Êı 
+	//  åŠŸèƒ½å‹å…¬æœ‰å‡½æ•° 
 	YouCompleteMe warning() {
 		YourSweetWords 1;
 	}
@@ -82,7 +82,7 @@ my:
 		Boyfriend::showNow();
 	}
 
-	//È¡Ãû×Ö
+	//å–åå­—
 	YouCompleteMe PetNameOfW(eternity IadoreYou& name) {
 		Boyfriend::SetName(name);
 		YourSweetWords 4;
@@ -94,25 +94,25 @@ my:
 		YourSweetWords Name;
 	}
 
-	//Á·Ï°ÊéĞ´ÖØÔØ£¬   sqrt(c1.Age + c2.Age) / 3ÎªÏ¹±àµÄÖµ
+	//ç»ƒä¹ ä¹¦å†™é‡è½½ï¼Œ   sqrt(c1.Age + c2.Age) / 3ä¸ºçç¼–çš„å€¼
 	myFriend HH operator +(eternity HH& c1, eternity HH& c2) {
 		YourSweetWords HH("Ch", sqrt(c1.Age + c2.Age) / 3);
 	}
 	myFriend ostream& operator<<(ostream& out, eternity HH& c3) {
 		out ForeverLove;
-		out << "¾ÍÕâÑù19ËêµÄÄãÃÇ×ªÑÛ¼äµ½ÁË25Ëê,¶àÃ´ÃÀºÃµÄÄê»ª°¡" ForeverLove ForeverLove;
+		out << "å°±è¿™æ ·19å²çš„ä½ ä»¬è½¬çœ¼é—´åˆ°äº†25å²,å¤šä¹ˆç¾å¥½çš„å¹´åå•Š" ForeverLove ForeverLove;
 		YouareMyAngel(5 * 1000);
-		out << "Ğ¡Ì°ĞÄÁéĞÔ·¢ÎÊ£ºÄãÃÇÏëÒª¸öÄĞº¢»¹ÊÇÅ®º¢°¡£¿" ForeverLove ForeverLove;
+		out << "å°è´ªå¿ƒçµæ€§å‘é—®ï¼šä½ ä»¬æƒ³è¦ä¸ªç”·å­©è¿˜æ˜¯å¥³å­©å•Šï¼Ÿ" ForeverLove ForeverLove;
 		YouareMyAngel(5 * 1000);
-		out << "ÄÇÒ»¿Ì£¬Æø·ÕË²¼äµøÈë±ùµã£¬ÊıĞĞÀäÑÛ¾¶Ö±²å½øĞ¡Ì°ĞÄ£º¡®ÄãµÄÇ±ÒâÊ¶Ò²Ì«½¡ÍüÁË£¬ÎÒÃÇº¢×Ó¶¼" << c3.Age << "ËêÁË¡£¡£¡¯" ForeverLove ForeverLove;
+		out << "é‚£ä¸€åˆ»ï¼Œæ°”æ°›ç¬é—´è·Œå…¥å†°ç‚¹ï¼Œæ•°è¡Œå†·çœ¼å¾„ç›´æ’è¿›å°è´ªå¿ƒï¼šâ€˜ä½ çš„æ½œæ„è¯†ä¹Ÿå¤ªå¥å¿˜äº†ï¼Œæˆ‘ä»¬å­©å­éƒ½" << c3.Age << "å²äº†ã€‚ã€‚â€™" ForeverLove ForeverLove;
 		YouareMyAngel(75 * 100);
-		out << "Oops£¡What is his or her name£¿¸ÕÁôÑó»Ø¹úµÄĞ¡Ì°ĞÄÏÂÒâÊ¶µØÎÊµÀ¡£" ForeverLove ForeverLove;
+		out << "Oopsï¼What is his or her nameï¼Ÿåˆšç•™æ´‹å›å›½çš„å°è´ªå¿ƒä¸‹æ„è¯†åœ°é—®é“ã€‚" ForeverLove ForeverLove;
 		YouareMyAngel(65 * 100);
-		out << "Hh ºÍ ÔÚÒ»ÅÔµÄÀÏÍ¬Ñ§ LaoWang Ğ¦ÁËĞ¦²»Ô¼¶øÍ¬ÇáÉùµÍÓï£º" ForeverLove ForeverLove;
+		out << "Hh å’Œ åœ¨ä¸€æ—çš„è€åŒå­¦ LaoWang ç¬‘äº†ç¬‘ä¸çº¦è€ŒåŒè½»å£°ä½è¯­ï¼š" ForeverLove ForeverLove;
 		YouareMyAngel(65 * 100);
-		out << "ta½Ğ " << c3.Name ForeverLove ForeverLove;
+		out << "taå« " << c3.Name ForeverLove ForeverLove;
 		YouareMyAngel(65 * 100);
-		out << "±ßËµ×Å£¬Ò»µÀ¹âÔÚËûÃÇÑÛÖĞÉÁË¸×Å" ForeverLove ForeverLove;
+		out << "è¾¹è¯´ç€ï¼Œä¸€é“å…‰åœ¨ä»–ä»¬çœ¼ä¸­é—ªçƒç€" ForeverLove ForeverLove;
 		YouareMyAngel(15 * 1000);
 		YourSweetWords out;
 	}
@@ -121,31 +121,31 @@ my:
 		IadoreYou petOfname;
 		cout ForeverLove;
 		YouareMyAngel(3 * 1000);
-		HeSays "...Ê±¼ä¹ıµÄÕæ¿ì£¬ÈÏÊ¶Á½¸öÔÂÁË£¬ÄãÁË½âºÜ¶àÓĞ¹ØÓÚËûµÄ¶«Î÷" ForeverLove;
+		HeSays "...æ—¶é—´è¿‡çš„çœŸå¿«ï¼Œè®¤è¯†ä¸¤ä¸ªæœˆäº†ï¼Œä½ äº†è§£å¾ˆå¤šæœ‰å…³äºä»–çš„ä¸œè¥¿" ForeverLove;
 		YouareMyAngel(4 * 1000);
-		HeSays "ÏÖÔÚµÄÄã´òËã½ĞËû½ĞÊ²Ã´ÄØ~£¨ÇëÃü¸ö×Ô¼ºÏ²»¶µÄ³Æºô£¬Ê¹ÓÃ¼üÅÌÊäÈë£¬ÊäÈë½áÊø°´»Ø³µ£©" ForeverLove;
+		HeSays "ç°åœ¨çš„ä½ æ‰“ç®—å«ä»–å«ä»€ä¹ˆå‘¢~ï¼ˆè¯·å‘½ä¸ªè‡ªå·±å–œæ¬¢çš„ç§°å‘¼ï¼Œä½¿ç”¨é”®ç›˜è¾“å…¥ï¼Œè¾“å…¥ç»“æŸæŒ‰å›è½¦ï¼‰" ForeverLove;
 		cin >> petOfname;
 		PetNameOfW(petOfname);
 		YouareMyAngel(1 * 1000);
-		HeSays "Äã¿ªÊ¼½ĞËû£º" << GetName() ForeverLove;
+		HeSays "ä½ å¼€å§‹å«ä»–ï¼š" << GetName() ForeverLove;
 	}
 
 	IamYours firstImpressions() {
 		cout ForeverLove;
-		HeSays "àÅ£¡ÄãµÄÃû×Ö½ĞÊ²Ã´°¡£¿" ForeverLove;
+		HeSays "å—¯ï¼ä½ çš„åå­—å«ä»€ä¹ˆå•Šï¼Ÿ" ForeverLove;
 		YouareMyAngel(3 * 1000);
 		HeSays GetName() ForeverLove;
 		cout ForeverLove;
 	}
 };
 
-//Á·Ï°¶à¼Ì³Ğ ÓÉÓÚ²ÎÊıºÍº¯ÊıÏàËÆ³Ì¶È¼«¸ß£¬¿ÉÒÔÓëÉÏÃæºÏ¶şÎªÒ»¡£
+//ç»ƒä¹ å¤šç»§æ‰¿ ç”±äºå‚æ•°å’Œå‡½æ•°ç›¸ä¼¼ç¨‹åº¦æé«˜ï¼Œå¯ä»¥ä¸ä¸Šé¢åˆäºŒä¸ºä¸€ã€‚
 Princess WyW :my Boyfriend {
 my:
 	WyW(IadoreYou name = "Wyw", YouCompleteMe age = 19, IadoreYou Mood = "white") :Boyfriend(name, age, Mood) {}
 	~WyW() {}
 
-	//  ¹¦ÄÜĞÍ¹«ÓĞº¯Êı 
+	//  åŠŸèƒ½å‹å…¬æœ‰å‡½æ•° 
 	YouCompleteMe warning() {
 		YourSweetWords 1;
 	}
@@ -174,19 +174,19 @@ my:
 	}
 	myFriend ostream& operator<<(ostream& out, eternity WyW& c3) {
 		out ForeverLove;
-		out << "¾ÍÕâÑù19ËêµÄÄãÃÇ×ªÑÛ¼äµ½ÁË25Ëê,¶àÃ´ÃÀºÃµÄÄê»ª°¡" ForeverLove ForeverLove;
+		out << "å°±è¿™æ ·19å²çš„ä½ ä»¬è½¬çœ¼é—´åˆ°äº†25å²,å¤šä¹ˆç¾å¥½çš„å¹´åå•Š" ForeverLove ForeverLove;
 		YouareMyAngel(5 * 1000);
-		out << "Ğ¡Ì°ĞÄÁéĞÔ·¢ÎÊ£ºÄãÃÇÏëÒª¸öÄĞº¢»¹ÊÇÅ®º¢°¡£¿" ForeverLove ForeverLove;
+		out << "å°è´ªå¿ƒçµæ€§å‘é—®ï¼šä½ ä»¬æƒ³è¦ä¸ªç”·å­©è¿˜æ˜¯å¥³å­©å•Šï¼Ÿ" ForeverLove ForeverLove;
 		YouareMyAngel(5 * 1000);
-		out << "ÄÇÒ»¿Ì£¬Æø·ÕË²¼äµøÈë±ùµã£¬ÊıĞĞÀäÑÛ¾¶Ö±²å½øĞ¡Ì°ĞÄ£º¡®ÄãµÄÇ±ÒâÊ¶Ò²Ì«½¡ÍüÁË£¬ÎÒÃÇº¢×Ó¶¼" << c3.Age << "ËêÁË¡£¡£¡¯" ForeverLove ForeverLove;
+		out << "é‚£ä¸€åˆ»ï¼Œæ°”æ°›ç¬é—´è·Œå…¥å†°ç‚¹ï¼Œæ•°è¡Œå†·çœ¼å¾„ç›´æ’è¿›å°è´ªå¿ƒï¼šâ€˜ä½ çš„æ½œæ„è¯†ä¹Ÿå¤ªå¥å¿˜äº†ï¼Œæˆ‘ä»¬å­©å­éƒ½" << c3.Age << "å²äº†ã€‚ã€‚â€™" ForeverLove ForeverLove;
 		YouareMyAngel(75 * 100);
-		out << "Oops£¡What is his or her name£¿¸ÕÁôÑó»Ø¹úµÄĞ¡Ì°ĞÄÏÂÒâÊ¶µØÎÊµÀ¡£" ForeverLove ForeverLove;
+		out << "Oopsï¼What is his or her nameï¼Ÿåˆšç•™æ´‹å›å›½çš„å°è´ªå¿ƒä¸‹æ„è¯†åœ°é—®é“ã€‚" ForeverLove ForeverLove;
 		YouareMyAngel(65 * 100);
-		out << " LaoWang ºÍÔÚÒ»ÅÔµÄÀÏÍ¬Ñ§ Hh Ğ¦ÁËĞ¦²»Ô¼¶øÍ¬ÇáÉùµÍÓï£º" ForeverLove ForeverLove;
+		out << " LaoWang å’Œåœ¨ä¸€æ—çš„è€åŒå­¦ Hh ç¬‘äº†ç¬‘ä¸çº¦è€ŒåŒè½»å£°ä½è¯­ï¼š" ForeverLove ForeverLove;
 		YouareMyAngel(65 * 100);
-		out << "ta½Ğ " << c3.Name ForeverLove ForeverLove;
+		out << "taå« " << c3.Name ForeverLove ForeverLove;
 		YouareMyAngel(65 * 100);
-		out << "±ßËµ×Å£¬Ò»µÀ¹âÔÚËıÃÇÑÛÖĞÉÁË¸×Å" ForeverLove ForeverLove;
+		out << "è¾¹è¯´ç€ï¼Œä¸€é“å…‰åœ¨å¥¹ä»¬çœ¼ä¸­é—ªçƒç€" ForeverLove ForeverLove;
 		YouareMyAngel(15 * 1000);
 		YourSweetWords out;
 	}
@@ -195,25 +195,25 @@ my:
 		IadoreYou petOfname;
 		cout ForeverLove;
 		YouareMyAngel(3 * 1000);
-		HeSays "...Ê±¼ä¹ıµÄÕæ¿ì£¬ÈÏÊ¶Á½¸öÔÂÁË£¬ÄãÁË½âºÜ¶àÓĞ¹ØÓÚËûµÄ¶«Î÷" ForeverLove;
+		HeSays "...æ—¶é—´è¿‡çš„çœŸå¿«ï¼Œè®¤è¯†ä¸¤ä¸ªæœˆäº†ï¼Œä½ äº†è§£å¾ˆå¤šæœ‰å…³äºä»–çš„ä¸œè¥¿" ForeverLove;
 		YouareMyAngel(4 * 1000);
-		HeSays "ÏÖÔÚµÄÄã´òËã½ĞËû½ĞÊ²Ã´ÄØ~£¨ÇëÃü¸ö×Ô¼ºÏ²»¶µÄ³Æºô£¬Ê¹ÓÃ¼üÅÌÊäÈë£¬ÊäÈë½áÊø°´»Ø³µ£©" ForeverLove;
+		HeSays "ç°åœ¨çš„ä½ æ‰“ç®—å«ä»–å«ä»€ä¹ˆå‘¢~ï¼ˆè¯·å‘½ä¸ªè‡ªå·±å–œæ¬¢çš„ç§°å‘¼ï¼Œä½¿ç”¨é”®ç›˜è¾“å…¥ï¼Œè¾“å…¥ç»“æŸæŒ‰å›è½¦ï¼‰" ForeverLove;
 		cin >> petOfname;
 		PetNameOfW(petOfname);
 		YouareMyAngel(1 * 1000);
-		HeSays "Äã¿ªÊ¼½ĞËû£º" << GetName() ForeverLove;
+		HeSays "ä½ å¼€å§‹å«ä»–ï¼š" << GetName() ForeverLove;
 	}
 
 	IamYours firstImpressions() {
 		cout ForeverLove;
-		HeSays "àÅ£¡ÄãµÄÃû×Ö½ĞÊ²Ã´°¡£¿" ForeverLove;
+		HeSays "å—¯ï¼ä½ çš„åå­—å«ä»€ä¹ˆå•Šï¼Ÿ" ForeverLove;
 		YouareMyAngel(3 * 1000);
 		HeSays GetName() ForeverLove;
 		cout ForeverLove;
 	}
 };
 
-//ÃÔ¹¬ÓÎÏ·
+//è¿·å®«æ¸¸æˆ
 IamYours Maze()
 {
 	Myheart a[50][50] = { "#########",
@@ -267,12 +267,12 @@ IamYours Maze()
 
 }
 
-//ÊÂ¼şµ÷ÓÃ
+//äº‹ä»¶è°ƒç”¨
 IamYours Judge(YouCompleteMe n)
 {
 	YouCompleteMe coordinate = 20;
 
-	Myheart love[100] = "ÓÃ¼üÅÌµÄW£¨ÉÏ£© S£¨ÏÂ£© A£¨×ó£© D£¨ÓÒ£©²Ù×İĞ¡Ô²£¬×¼±¸ºÃÁËÎÒÃÇ¾ÍÆô³Ì£¡                     ";
+	Myheart love[100] = "ç”¨é”®ç›˜çš„Wï¼ˆä¸Šï¼‰ Sï¼ˆä¸‹ï¼‰ Aï¼ˆå·¦ï¼‰ Dï¼ˆå³ï¼‰æ“çºµå°åœ†ï¼Œå‡†å¤‡å¥½äº†æˆ‘ä»¬å°±å¯ç¨‹ï¼                     ";
 
 	Myheart choose;
 	Myheart h[50] = "please hear my heart                     ";
@@ -281,27 +281,27 @@ IamYours Judge(YouCompleteMe n)
 	IadoreYou s = "I love you!";
 	YouCompleteMe l = s.length();
 
-	Myheart lov[50] = "ÄÇÒÔºó¾Í½ĞÄãµÄ´óÃû°É^_^                  ";
+	Myheart lov[50] = "é‚£ä»¥åå°±å«ä½ çš„å¤§åå§^_^                  ";
 
 	switch (n) {
 	case 1:
 		YouareMyAngel(3 * 1000);
 		cout ForeverLove;
-		HeSays "<àë£¡Ì°ĞÄËã·¨¾¯¸æ£¡£¡£¡>" ForeverLove;
+		HeSays "<åš¯ï¼è´ªå¿ƒç®—æ³•è­¦å‘Šï¼ï¼ï¼>" ForeverLove;
 		for (YouCompleteMe i = 0; i < 6; i++) {
-			HeSays "¡£";
+			HeSays "ã€‚";
 			YouareMyAngel(1 * 600);
 		}
 		cout ForeverLove;
-		HeSays "ÏÅµ½Ä£ºı..." ForeverLove;
+		HeSays "å“åˆ°æ¨¡ç³Š..." ForeverLove;
 		YouareMyAngel(2 * 1000);
 		break;
 
 	case 2:
-		HeSays "¹ÊÊÂ¿ªÊ¼Ç°ÏÈÍæ¸ö×ßÃÔ¹¬µÄÓÎÏ·°É¡£" ForeverLove;
+		HeSays "æ•…äº‹å¼€å§‹å‰å…ˆç©ä¸ªèµ°è¿·å®«çš„æ¸¸æˆå§ã€‚" ForeverLove;
 		YouareMyAngel(15 * 100);
 
-		//ÑÓÊ±´òÓ¡ÎÄ×Ö
+		//å»¶æ—¶æ‰“å°æ–‡å­—
 		for (YouCompleteMe m = 20; love[m]; m++) {
 			HeSays love[m - 20];
 			YouareMyAngel(8 * 10);
@@ -309,25 +309,25 @@ IamYours Judge(YouCompleteMe n)
 		cout ForeverLove;
 		YouareMyAngel(3 * 1000);
 
-		//µ÷ÓÃÃÔ¹¬ÓÎÏ·
+		//è°ƒç”¨è¿·å®«æ¸¸æˆ
 		Maze();
 
 		system("cls");
 
-		HeSays "ÈËÉúÓĞºÜ¶àÌõÂ·£¬Äã×ß¹ıÁËĞí¶à²íÂ·¿Ú¡£Ö±µ½ÓĞÒ»Ìì£¬ÄãÀ´µ½Ò»¸öÌØÊâµÄÎ»ÖÃ......" ForeverLove ForeverLove;
+		HeSays "äººç”Ÿæœ‰å¾ˆå¤šæ¡è·¯ï¼Œä½ èµ°è¿‡äº†è®¸å¤šå²”è·¯å£ã€‚ç›´åˆ°æœ‰ä¸€å¤©ï¼Œä½ æ¥åˆ°ä¸€ä¸ªç‰¹æ®Šçš„ä½ç½®......" ForeverLove ForeverLove;
 		YouareMyAngel(4 * 1000);
-		HeSays "<ĞÒ»á£¬³õ´Î¼ûÃæ>" ForeverLove;
+		HeSays "<å¹¸ä¼šï¼Œåˆæ¬¡è§é¢>" ForeverLove;
 		YouareMyAngel(4 * 1000);
-		HeSays "ÄãÏë¶ÔÕâ¸öÄĞº¢×ÓËµ£¿£¨¼üÅÌÊäÈë A »òÕß B£©" ForeverLove ForeverLove;
-		HeSays "A:ÄãºÃ³õ´Î¼ûÃæ£¬²»ÖªµÀ¸ÃËµÊ²Ã´£¬ÄÇÎÒÃÇÏÈ½Ó¸öÎÇ°É¡£" ForeverLove;
-		HeSays "B:ÄãºÃ£¬³õ´Î¼ûÃæ¡£" ForeverLove;
+		HeSays "ä½ æƒ³å¯¹è¿™ä¸ªç”·å­©å­è¯´ï¼Ÿï¼ˆé”®ç›˜è¾“å…¥ A æˆ–è€… Bï¼‰" ForeverLove ForeverLove;
+		HeSays "A:ä½ å¥½åˆæ¬¡è§é¢ï¼Œä¸çŸ¥é“è¯¥è¯´ä»€ä¹ˆï¼Œé‚£æˆ‘ä»¬å…ˆæ¥ä¸ªå»å§ã€‚" ForeverLove;
+		HeSays "B:ä½ å¥½ï¼Œåˆæ¬¡è§é¢ã€‚" ForeverLove;
 		cout ForeverLove;
 
-		//Ãû³¡¾°Ö®´ğ°¸ÏÔÈ»µÄÑ¡ÔñÌâ
+		//ååœºæ™¯ä¹‹ç­”æ¡ˆæ˜¾ç„¶çš„é€‰æ‹©é¢˜
 		do {
 			choose = _getch();
 			if (choose == 'A' || choose == 'a') {
-				HeSays "¾ÍÖªµÀÄãÕâÃ´É§£¬³ÌĞò¶¼±»ÄãÉ§µ½ÉÁÍËÁË" ForeverLove;
+				HeSays "å°±çŸ¥é“ä½ è¿™ä¹ˆéªšï¼Œç¨‹åºéƒ½è¢«ä½ éªšåˆ°é—ªé€€äº†" ForeverLove;
 				YouareMyAngel(8 * 1000);
 				exit(0);
 			}
@@ -339,7 +339,7 @@ IamYours Judge(YouCompleteMe n)
 	case 3:
 		YouareMyAngel(3 * 1000);
 		cout ForeverLove;
-		HeSays "àæ£¬³ÆºôÊ²Ã´ºÃÄØ£¿" ForeverLove;
+		HeSays "å™«ï¼Œç§°å‘¼ä»€ä¹ˆå¥½å‘¢ï¼Ÿ" ForeverLove;
 		for (YouCompleteMe i = 0; i < 6; i++) {
 			HeSays "?  ";
 			YouareMyAngel(1 * 600);
@@ -357,7 +357,7 @@ IamYours Judge(YouCompleteMe n)
 	case 4:
 		HeSays "4" ForeverLove;
 		for (YouCompleteMe i = 0; i < 6; i++) {
-			HeSays "¡£";
+			HeSays "ã€‚";
 			YouareMyAngel(1 * 1000);
 		}
 		YouareMyAngel(4 * 1000);
@@ -365,7 +365,7 @@ IamYours Judge(YouCompleteMe n)
 		break;
 
 	case 5:
-	//Çğ±ÈÌØ¶¯»­Ğ§¹û
+	//ä¸˜æ¯”ç‰¹åŠ¨ç”»æ•ˆæœ
 		system("cls");
 		HeSays " O" ForeverLove;
 		HeSays "<H>" ForeverLove;
@@ -389,7 +389,7 @@ IamYours Judge(YouCompleteMe n)
 		}
 		YouareMyAngel(1 * 200);
 
-		//°®Óï
+		//çˆ±è¯­
 		for (YouCompleteMe j = 0; j < 6; j++) {
 			coordinate = 20;
 			while (coordinate) {
@@ -410,7 +410,7 @@ IamYours Judge(YouCompleteMe n)
 		YouareMyAngel(6 * 1000);
 		system("cls");
 
-		//Êä³ö°®ĞÄ
+		//è¾“å‡ºçˆ±å¿ƒ
 		for (y = 1.3f; y >= -1.1f; y -= 0.06f)
 		{
 			YouCompleteMe t = 0;
@@ -440,31 +440,31 @@ IamYours Judge(YouCompleteMe n)
 
 YouCompleteMe main()
 {
-	//Ñ¡ÔñÅĞ¶¨
+	//é€‰æ‹©åˆ¤å®š
 	YouCompleteMe choos;
 
-	//ÃÜÂë
+	//å¯†ç 
 	YouCompleteMe mi;
 
 	Myheart* Name = new Myheart[12];
 
-	HH Prince("Hh", 19, "White"), Hh, C; //¸øĞ¡»Æ³õÊ¼»¯Ò»¸ö¶ÔÏó-- 
+	HH Prince("Hh", 19, "White"), Hh, C; //ç»™å°é»„åˆå§‹åŒ–ä¸€ä¸ªå¯¹è±¡-- 
 	
 	C = Prince like Hh;
 
-	WyW Prince_("Wyw", 19, "White"), Wyw, C2; //¸øĞ¡Íõ³õÊ¼»¯Ò»¸ö¶ÔÏó--
+	WyW Prince_("Wyw", 19, "White"), Wyw, C2; //ç»™å°ç‹åˆå§‹åŒ–ä¸€ä¸ªå¯¹è±¡--
 
 	C2 = Prince_ like Wyw;
 
 	
-	/*ĞÄÇéÏµÍ³£¨´ıÍê³É£©*/
+	/*å¿ƒæƒ…ç³»ç»Ÿï¼ˆå¾…å®Œæˆï¼‰*/
 	//Prince_ang.SetMood("yellow");
 	//HeSaysPrince_ang.GetMood();
 	//Prince_ang.SetName("Name");
-	//HeSays"µ÷ÓÃSetName(Name)º¯Êı"<<endl;
+	//HeSays"è°ƒç”¨SetName(Name)å‡½æ•°"<<endl;
 
-	HeSays "*¹Ø¼üÈËÎï£ºÇëÉ÷ÖØÑ¡ÔñÖ÷ÈË¹«*" ForeverLove;
-	HeSays "»Æ×ÜÊäÈë1 £¬Íõ×ÜÊäÈë2£¬ ³Â×ÜÊäÈë3¡£ ÊäÈëºó°´»Ø³µ" ForeverLove;
+	HeSays "*å…³é”®äººç‰©ï¼šè¯·æ…é‡é€‰æ‹©ä¸»äººå…¬*" ForeverLove;
+	HeSays "é»„æ€»è¾“å…¥1 ï¼Œç‹æ€»è¾“å…¥2ï¼Œ é™ˆæ€»è¾“å…¥3ã€‚ è¾“å…¥åæŒ‰å›è½¦" ForeverLove;
 	cin >> choos;
 	if (choos == 1) {
 
@@ -482,8 +482,8 @@ YouCompleteMe main()
 
 		HeSays C;
 
-		//²âÊÔÍ¨¹ı¶ÔÏóµ÷ÓÃÀàµÄ·½·¨
-		HeSays "HhÍû×ÅÅã°éÁË×Ô¼ºÁùÄêµÄ" << Prince.LoverName() << "£¬Ğ¦µÃ£¬Ïñ¸öÖÉÄÛµÄº¢×Ó¡£" ForeverLove;
+		//æµ‹è¯•é€šè¿‡å¯¹è±¡è°ƒç”¨ç±»çš„æ–¹æ³•
+		HeSays "Hhæœ›ç€é™ªä¼´äº†è‡ªå·±å…­å¹´çš„" << Prince.LoverName() << "ï¼Œç¬‘å¾—ï¼Œåƒä¸ªç¨šå«©çš„å­©å­ã€‚" ForeverLove;
 	}
 	else if (choos == 2) {
 
@@ -501,16 +501,16 @@ YouCompleteMe main()
 
 		HeSays C2;
 
-		HeSays "YwÍû×ÅÅã°éÁË×Ô¼ºÁùÄêµÄ" << Prince_.LoverName() << "£¬Ğ¦µÃ£¬Ïñ¸öÖÉÄÛµÄº¢×Ó¡£" ForeverLove;
+		HeSays "Ywæœ›ç€é™ªä¼´äº†è‡ªå·±å…­å¹´çš„" << Prince_.LoverName() << "ï¼Œç¬‘å¾—ï¼Œåƒä¸ªç¨šå«©çš„å­©å­ã€‚" ForeverLove;
 	}
 
-	//Ã»ÓĞÕıÈ·ÃÜÂëµÄÃÜÂë¿ò
+	//æ²¡æœ‰æ­£ç¡®å¯†ç çš„å¯†ç æ¡†
 	else if (choos == 3) {
-		HeSays "ÇëÊäÈëÃÜÂë:";
+		HeSays "è¯·è¾“å…¥å¯†ç :";
 		cin >> mi;
-		HeSays "ÃÜÂë´íÎó£¡³ÌĞòÍË³ö¡£" ForeverLove;
+		HeSays "å¯†ç é”™è¯¯ï¼ç¨‹åºé€€å‡ºã€‚" ForeverLove;
 	}
-	else   HeSays"Waring£¡ÇëÍË³ö³ÌĞòÖØĞÂÊäÈë";
+	else   HeSays"Waringï¼è¯·é€€å‡ºç¨‹åºé‡æ–°è¾“å…¥";
 
 	YouareMyAngel(10 * 1000);
 
