@@ -2,8 +2,8 @@
 	Writing code with C++
 
 	author: littleGreedy
-	description: A game that leads to the Antarctica love place
-	target: The student majors in computer for review
+	description: A game that leads to the beauty place
+	target: The student who majors in computer wrote C++ codes to finish review
 */
 
 
